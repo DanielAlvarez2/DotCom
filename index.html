@@ -1,0 +1,18 @@
+Random .com Name Generator<br><br>
+<script>
+let pre=['by','my','the','go','max','pro'];
+let words=['art','bit','end','up','to','dev','on','for','of','tech','tek','jet','nav','div','key','ion','get','one','two','six','pixel','pixels','web','net','ten','sum','nth',
+            'top','zip','digital','red','orange','yellow','green','blue','purple','design','designs','websites','webdesign','online','code','internet','site',
+            'div','html','http','designers','custom'];
+let post=['pro','pros','max','plus','hub','place','space','spot','studio','lab','labs','center','pen','bydesign','portal','depot'];
+let a;
+let b;
+let c;
+for (let i = 0;i < 67;i++) {
+a = Math.floor(Math.random() * (pre.length - 1));
+b = Math.floor(Math.random() * (words.length - 1));
+c = Math.floor(Math.random() * (words.length - 1));
+d = Math.floor(Math.random() * (post.length - 1));
+document.write(`${pre[a]}${words[b]}${words[c]}${post[d]}.com<br>`);
+}
+</script>
