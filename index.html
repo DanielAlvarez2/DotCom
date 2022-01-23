@@ -1,18 +1,116 @@
 Random .com Name Generator<br><br>
+
+
 <script>
-let pre=['by','my','the','go','max','pro'];
-let words=['art','bit','end','up','to','dev','on','for','of','tech','tek','jet','nav','div','key','ion','get','one','two','six','pixel','pixels','web','net','ten','sum','nth',
-            'top','zip','digital','red','orange','yellow','green','blue','purple','design','designs','websites','webdesign','online','code','internet','site',
-            'div','html','http','designers','custom'];
-let post=['pro','pros','max','plus','hub','place','space','spot','studio','lab','labs','center','pen','bydesign','portal','depot'];
+let pre=['by','my','the','go','max','un','pro','e-'];
+let mid=['for','to','on','of'];
+let post=['pro','pros','max','plus','hub','place','space','scape','spot','studio','lab','labs','center','pen','bydesign','city','portal','depot','tech','tek'];
+
+let words=['art','bit','end','up','dev','jet','nav','div','key','ion','get','pixel','pixels','web','net','sum','nth',
+            'top','zip','digital','red','start','alpha','beta','gamma','delta','sigma','apex','base','best','beta','byte','bold','core','cube',
+            'blue','data','recursive','level','deep','down','left','right','before','after','irl',
+            'design','gate','gear','designs','websites','webdesign','online','code','internet','drop','easy','echo','edit','epic','ergo','even','ever','fade','file',
+            'files','fine','menu','mode','node','noir','nova','oval','round','circle','square','bold','page','path','pure','push','real','star','sum','tier','site',
+            'true',
+            'div','html','http','designers','grid','hashtag','button','host','icon','iconic','link','live','luna','main','mark','refresh','infinite','infinity',
+            'loop','logic','custom'];
 let a;
 let b;
 let c;
-for (let i = 0;i < 67;i++) {
-a = Math.floor(Math.random() * (pre.length - 1));
-b = Math.floor(Math.random() * (words.length - 1));
-c = Math.floor(Math.random() * (words.length - 1));
-d = Math.floor(Math.random() * (post.length - 1));
-document.write(`${pre[a]}${words[b]}${words[c]}${post[d]}.com<br>`);
-}
+let d;
 </script>
+
+
+<div style="display:flex">
+
+    <div>
+        <script>
+            document.write(`PRE + 1WORD<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (pre.length));
+            b = Math.floor(Math.random() * (words.length));
+            document.write(`${pre[a]}${words[b]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+    <div>
+        <script>
+            document.write(`PRE + 2WORDS<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (pre.length));
+            b = Math.floor(Math.random() * (words.length));
+            c = Math.floor(Math.random() * (words.length));
+            document.write(`${pre[a]}${words[b]}${words[c]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+    <div>
+        <script>
+            document.write(`2WORDS<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (words.length));
+            b = Math.floor(Math.random() * (words.length));
+            document.write(`${words[a]}${words[b]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+    <div>
+        <script>
+            document.write(`3WORDS<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (words.length));    
+            b = Math.floor(Math.random() * (words.length));
+            c = Math.floor(Math.random() * (words.length));
+            document.write(`${words[a]}${words[b]}${words[c]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+    <div>
+        <script>
+            document.write(`WORD1 + MID + WORD2&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (words.length));    
+            b = Math.floor(Math.random() * (mid.length));
+            c = Math.floor(Math.random() * (words.length));
+            document.write(`${words[a]}${mid[b]}${words[c]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+    <div>
+        <script>
+            document.write(`1WORD + POST<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (words.length));    
+            b = Math.floor(Math.random() * (post.length));
+            document.write(`${words[a]}${post[b]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+
+    <div>
+        <script>
+            document.write(`2WORDS + POST<br><br>`);
+            for (let i = 0;i < 37;i++) {
+            a = Math.floor(Math.random() * (words.length));
+            b = Math.floor(Math.random() * (words.length));    
+            c = Math.floor(Math.random() * (post.length));
+            document.write(`${words[a]}${words[b]}${post[c]}.com &nbsp;&nbsp;&nbsp;<br>`);
+            }
+            document.write(`<br><br>`);
+        </script>
+    </div>
+
+
+</div>
